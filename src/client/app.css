@@ -7,8 +7,8 @@ body {
   margin: auto;
 }
 
-.toast {
-	margin-top: 100px;
+.container-fluid {
+	padding: 0px !important;
 }
 
 .topInfo {
@@ -84,6 +84,30 @@ body {
 	font-size: 18px;
 }
 
-.container-fluid {
-	padding: 0px !important;
+.categorySection {
+	width: 100%;
+	height: 500px;
+	background: url('http://hd.wallpaperswide.com/thumbs/smoke_men-t2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.categoryTitle {
+	margin-top: 80px;
+	width: 100%;
+	font-size: 70px;
+	color: #cccccc;
+}
+
+.categoryMenu {
+	width: 100%;
+}
+
+.categoryCol {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+.categoryItem {
+	padding: 5px 0px;
 }
