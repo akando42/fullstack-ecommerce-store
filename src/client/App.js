@@ -5,10 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import ReactImage from './react.png';
 import TopBar from './components/TopBar';
-import ReactDOM from 'react-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import TopInfo from './components/TopInfo';
+import ReactDOM from 'react-dom';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const ExampleToast = ({ children }) => {
   const [show, toggleShow] = useState(true);
@@ -36,6 +35,7 @@ export default class App extends Component {
     const { username } = this.state;
     return (
       <Container fluid>
+        <TopInfo></TopInfo>
         <TopBar></TopBar>
         <Jumbotron fluid>
           <Row>

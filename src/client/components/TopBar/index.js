@@ -4,9 +4,6 @@ import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 class TopBar extends Component {
   render() {
     return (
