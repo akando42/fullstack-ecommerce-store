@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { Row, Col, Button, Jumbotron, Toast } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import ReactImage from './react.png';
+
+
 
 export default class App extends Component {
   state = { username: null };
@@ -14,10 +19,20 @@ export default class App extends Component {
   render() {
     const { username } = this.state;
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
+      <Jumbotron fluid>
+        <Row>
+          <Col>
+            {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button variant="primary" size="lg">
+              Large button
+            </Button>
+          </Col>
+        </Row>
+      </Jumbotron>
     );
   }
 }

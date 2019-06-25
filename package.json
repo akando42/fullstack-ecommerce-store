@@ -14,8 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.16.3",
     "react": "^16.5.2",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
