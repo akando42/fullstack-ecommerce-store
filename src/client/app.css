@@ -6,3 +6,58 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.toast {
+	margin-top: 100px;
+}
+
+#shopBrand {
+	font-size: 30px;
+	font-weight: 700;
+	color: #F6305F;
+}
+
+.form-control .shopping-search {
+	color: #ffffff;
+}
+
+.navbar-dark .navbar-nav {
+	
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	padding: 0px 25px;
+	font-size: 21px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.shopping-search {
+	padding: 7px;
+	border-radius: 28px;
+	background-color: #969696;
+}
+
+.shopping-search .searchIcon {
+	border-width: 0px;
+	color: #ffffff;
+	background-color: #969696;
+}
+
+.shopping-search .searchInput {
+	border-width: 0px;
+	color: #343a40;
+	font-weight: 500;
+	background-color: #969696;
+}
+
+.shopping-search .searchInput::placeholder {
+	color: white;
+	font-size: 18px;
+}
+
+.container-fluid {
+	padding: 0px !important;
+}
