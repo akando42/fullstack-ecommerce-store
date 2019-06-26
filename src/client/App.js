@@ -12,8 +12,12 @@ import SearchFilter from './components/SearchFilter';
 import SearchResult from './components/SearchResult';
 import FeatureSection from './components/FeatureSection';
 import AdvertisingBanner from './components/AdvertisingBanner';
+import SubscriptionForm from './components/SubscriptionForm';
+import StoreFooter from './components/StoreFooter';
 
 import ReactDOM from 'react-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 export default class App extends Component {
@@ -42,6 +46,8 @@ export default class App extends Component {
         </Row>
         <FeatureSection></FeatureSection>
         <AdvertisingBanner></AdvertisingBanner>
+        <SubscriptionForm></SubscriptionForm>
+        <StoreFooter></StoreFooter>
       </Container>
     );
   }

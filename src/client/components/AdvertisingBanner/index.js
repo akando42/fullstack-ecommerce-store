@@ -5,7 +5,7 @@ class AdvertisingBanner extends Component {
 	render(){
 		return (
 			<Row className="advertisingBanner">
-				<Col lg={{span: 4, offset: 7}}>
+				<Col lg={{span: 4, offset: 1}}>
 					<div class="adsTitle">
 						Converse
 					</div>

@@ -220,3 +220,66 @@ body {
 	border-radius: 20px;
 	color: #F6305F;
 }
+
+.subscriptionForm {
+	text-align: left;
+	padding: 25px;
+	font-weight: 500;
+	font-size: 21px;
+	width: 100%;
+	height: 80px;
+	margin-top: 40px;
+	background-color: #EFEFEF;
+}
+
+.subscriptionForm .email-subscription {
+	border-radius: 20px;
+	background-color: white;
+	margin-right: 10px;
+	width: 300px;
+}
+
+.subscriptionForm .email-subscription .mailIcon{
+	margin-left: 10px;
+	background-color: white;
+	border-width: 0px;
+}
+
+.subscriptionForm .email-subscription .mailInput{
+	background-color: white;
+	border-width: 0px;
+}
+
+.subscriptionForm .mailButton {
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
+.storeFooter {
+	width: 100%;
+	height: 240px;
+	background-color: #2E2E2E;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 700;
+	color: white;
+}
+
+.storeFooter .footer-item {
+	padding: 15px 30px;
+	color: white;
+}
+
+.storeFooter .footer-item .footer-link {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+.storeFooter .socialMedia .socialIcon {
+	margin: 20px;
+}
+
+.storeFooter .copyRights {
+	color: #ccc;
+	font-size: 15px;
+}
