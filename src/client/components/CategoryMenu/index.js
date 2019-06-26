@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col} from 'react-bootstrap';
+import shirt from '../../static/product_images/afghan-flower.gif';
 
 class CategoryMenu extends Component {
 	state = { itemGroup: []} ;

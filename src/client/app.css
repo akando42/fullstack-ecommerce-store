@@ -5,6 +5,7 @@ h1 {
 body {
   text-align: center;
   margin: auto;
+  background-color: #F7F7F7;
 }
 
 .container-fluid {
@@ -110,4 +111,82 @@ body {
 
 .categoryItem {
 	padding: 5px 0px;
+}
+
+.filterSection {
+	padding: 10px 0px;
+}
+
+.filterSection .filterCards {
+	width: 100%;
+}
+
+.searchFilter {
+	background-color: white;
+	width: 100%;
+	text-align: left;
+	margin: 3px 0px;
+}
+
+.searchFilter .filterItem {
+	font-weight: 700;
+
+}
+
+.searchFilter .brandSelection {
+	
+}
+
+.searchFilter .brandRow {
+	margin: 3px 0px;
+}
+
+.searchFilter .brandName {
+	margin: 0px 20px;
+}
+
+.searchFilter .size-button {
+	margin: 3px;
+}
+
+.searchFilter .brandSelection {
+	padding: 0px 20px;
+}
+
+.filterResult {
+	text-align: left;
+	background-color: #F7F7F7;
+}
+
+.searchAction {
+	margin: 3px 0px;
+	background-color: #F7F7F7;
+}
+
+.searchAction #applyButton {
+	background-color: #F6305F;
+	border-radius: 20px;
+}
+
+.searchAction #clearButton {
+	color: #F6305F;
+}
+
+
+.searchResult {
+	background-color: #F7F7F7;
+}
+
+.resultSection {
+	margin-top: 10px;
+}
+
+.resultSection .resultItem .itemImage {
+	width: 100%;
+	padding: 10px;
+	height: auto;
+}
+.shoppingSection {
+	width: 94%;
+	margin: 0px auto;
 }
