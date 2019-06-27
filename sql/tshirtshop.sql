@@ -319,14 +319,15 @@ INSERT INTO `product_category` (`product_id`, `category_id`) VALUES
 
 -- Populate attribute table
 INSERT INTO `attribute` (`attribute_id`, `name`) VALUES
-       (1, 'Size'), (2, 'Color');
+       (1, 'Size'), (2, 'Color'), (3, 'Group');
 
 -- Populate attribute_value table
 INSERT INTO `attribute_value` (`attribute_value_id`, `attribute_id`, `value`) VALUES
        (1, 1, 'S'), (2, 1, 'M'), (3, 1, 'L'), (4, 1, 'XL'), (5, 1, 'XXL'),
        (6, 2, 'White'),  (7, 2, 'Black'), (8, 2, 'Red'), (9, 2, 'Orange'),
        (10, 2, 'Yellow'), (11, 2, 'Green'), (12, 2, 'Blue'),
-       (13, 2, 'Indigo'), (14, 2, 'Purple');
+       (13, 2, 'Indigo'), (14, 2, 'Purple'), (15,3,'Men'),
+       (16,3,'Women'), (17,3,'Kids');
 
 -- Populate product_attribute table
 INSERT INTO `product_attribute` (`product_id`, `attribute_value_id`)
@@ -468,7 +469,7 @@ BEGIN
   SET @p2 = inShortProductDescriptionLength;
   SET @p3 = inDepartmentId;
   SET @p4 = inStartItem;
-  SET @p5 = inProductsPerPage;
+  SET @p5 = inProductsPerPage;f
 
   EXECUTE statement USING @p1, @p2, @p3, @p4, @p5;
 END$$
