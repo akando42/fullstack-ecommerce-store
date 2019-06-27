@@ -1,6 +1,9 @@
-const express = require('express');
 const os = require('os');
+const express = require('express');
 const mysql = require('mysql');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
 var con = mysql.createConnection({
   host: "remotemysql.com",
   user: "PqIDRs1G70",
@@ -64,8 +67,16 @@ var getProductDetail = function(res, table, feature, input){
 	})
 }
 
-// API Endpoints
-app.get('/api/user', (req, res) => res.send({ username: os.userInfo().username }));
+
+
+// Api Dodumentations
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
+/// Getting Users
+app.get('/api/user', function(req, res) {
+	res.send({ username: os.userInfo().username })
+})
 
 /// Getting Category Data
 app.get('/api/getCategory',function(req,res) {
@@ -84,6 +95,59 @@ app.get('/api/getAttribute',function(req,res) {
 	var input = req.query.attribute;
 	getProductId(res, 'product_attribute','attribute_value_id',input)
 });
+
+/////////////////////////////////////////
+/////   CRUD ENDPOINTS FOR ORDERS   /////
+/////////////////////////////////////////
+
+/// Get All Orders Data
+app.post('/api/getOrders', function(req,res){
+	res.send('Creating New Orders')
+})
+
+/// Create Orders Data
+app.post('/api/createOrder', function(req,res){
+	res.send('Creating New Orders')
+})
+
+/// Getting Orders Data
+app.get('/api/getOrder', function(req,res){
+	res.send('Here is Ya Orders')
+})
+
+/// Update Orders Data
+app.put('/api/updateOrder', function(req,res){
+	res.send('Updating Order Detail')
+})
+
+/////////////////////////////////////////
+/////   CRUD ENDPOINTS FOR CARTS    /////
+/////////////////////////////////////////
+
+/// Getting All Carts
+app.get('/api/getCarts', function(req, res){
+	res.send('Here is your Cart: '+req.query.cartId)
+})
+
+/// Create New Cart Data
+app.post('/api/createCart', function(req,res){
+	res.send('Creating New Cart')
+})
+
+/// Getting Cart Data by Id
+app.get('/api/getCart', function(req, res){
+	res.send('Here is your Cart: '+req.query.cartId)
+})
+
+/// Update Cart Data by Id
+app.put('/api/updateCart:cartId', function(req,res){
+	res.send('Creating New Cart')
+})
+
+
+//////////////////////////////
+/////   RUNNING SERVER   /////
+//////////////////////////////
 
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));
 
