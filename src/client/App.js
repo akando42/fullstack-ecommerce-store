@@ -3,7 +3,6 @@ import { Container, Row, Col, Button, Jumbotron, Toast } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
-import ReactImage from './react.png';
 
 import TopBar from './components/TopBar';
 import TopInfo from './components/TopInfo';
