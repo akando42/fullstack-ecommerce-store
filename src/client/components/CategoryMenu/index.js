@@ -12,28 +12,28 @@ class CategoryMenu extends Component {
 				</Row>
 				<Row className="categoryMenu">
 					<Col lg={{span: 3, offset: 1}} className="categoryCol">
-						<div class="categoryItem">First Colum</div>
-						<div class="categoryItem">First Colum</div>
-						<div class="categoryItem">First Colum</div>
-						<div class="categoryItem">First Colum</div>
-						<div class="categoryItem">First Colum</div>
+						<div className="categoryItem">First Colum</div>
+						<div className="categoryItem">First Colum</div>
+						<div className="categoryItem">First Colum</div>
+						<div className="categoryItem">First Colum</div>
+						<div className="categoryItem">First Colum</div>
 					</Col>
 					<Col lg={3} className="categoryCol">
-						<div class="categoryItem">Second Colum</div>
-						<div class="categoryItem">Second Colum</div>
-						<div class="categoryItem">Second Colum</div>
-						<div class="categoryItem">Second Colum</div>
-						<div class="categoryItem">Second Colum</div>
+						<div className="categoryItem">Second Colum</div>
+						<div className="categoryItem">Second Colum</div>
+						<div className="categoryItem">Second Colum</div>
+						<div className="categoryItem">Second Colum</div>
+						<div className="categoryItem">Second Colum</div>
 					</Col>					
 					<Col lg={4} className="categoryCol">
-						<div class="categoryItem">Third Colum</div>
-						<div class="categoryItem">Third Colum</div>
-						<div class="categoryItem">Third Colum</div>
-						<div class="categoryItem">Third Colum</div>
-						<div class="categoryItem">Third Colum</div>
+						<div className="categoryItem">Third Colum</div>
+						<div className="categoryItem">Third Colum</div>
+						<div className="categoryItem">Third Colum</div>
+						<div className="categoryItem">Third Colum</div>
+						<div className="categoryItem">Third Colum</div>
 					</Col>
 				</Row>
-			</Row>
+			Name</Row>
 		)
 	}
 }

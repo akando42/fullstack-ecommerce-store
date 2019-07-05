@@ -7,15 +7,15 @@ class SearchFilter extends Component {
 	state = { value: 2 };
 	render(){
 		return (
-			<div class="filterCards">
+			<div className="filterCards">
 				<Card className="filterResult">
 				  <Card.Body>
 				  	<strong>Filter 486 items</strong>
-				  	<ul class="selectedFilters">
-				  		<li class="selectedFilterItem">
+				  	<ul className="selectedFilters">
+				  		<li className="selectedFilterItem">
 				  			Gender: Man
 				  		</li>
-				  		<li class="selectedFilterItem">
+				  		<li className="selectedFilterItem">
 				  			Category: Dresses
 				  		</li>
 				  	</ul>
@@ -25,7 +25,7 @@ class SearchFilter extends Component {
 				<Card className="searchFilter">
 				  <Card.Img variant="top" src="" />
 				  <Card.Body>
-				    <div class="filterItem">Color</div>
+				    <div className="filterItem">Color</div>
 				    <div>
 				    	<Row className="colorItem">
 					    	<InputGroup.Radio className="colorSelection" />
@@ -36,7 +36,7 @@ class SearchFilter extends Component {
 					    	<InputGroup.Radio className="colorSelection" />
 				    	</Row>
 				    </div>
-				    <div class="filterItem">Size</div>
+				    <div className="filterItem">Size</div>
 				    <div>
 				    	<Row className="sizeItem">
 				    		<Button variant="danger" className="col-md-4 size-button">XS</Button>
@@ -46,7 +46,7 @@ class SearchFilter extends Component {
 				    		<Button variant="danger" className="col-md-4 size-button">XL</Button>
 				    	</Row>
 				    </div>
-				    <div class="filterItem">Price range</div>
+				    <div className="filterItem">Price range</div>
 				    <div>
 				    	<InputRange
 					        maxValue={20}
@@ -55,27 +55,27 @@ class SearchFilter extends Component {
 					        onChange={value => this.setState({ value })} 
 				        />
 				    </div>
-				    <div class="filterItem">Brand</div>
+				    <div className="filterItem">Brand</div>
 				    <div>
 				    	<Row className="brandRow">
 				    		<InputGroup.Checkbox className="brandSelection" />
-				    		<span class="brandName"> Abercrombie</span>
+				    		<span className="brandName"> Abercrombie</span>
 				    	</Row>
 				    	<Row className="brandRow">
 				    		<InputGroup.Checkbox className="brandSelection" />
-				    		<span class="brandName"> Abercrombie</span>
+				    		<span className="brandName"> Abercrombie</span>
 				    	</Row>
 				    	<Row className="brandRow">
 				    		<InputGroup.Checkbox className="brandSelection" />
-				    		<span class="brandName"> Abercrom  bie</span>
+				    		<span className="brandName"> Abercrom  bie</span>
 				    	</Row>
 				    	<Row className="brandRow">
 				    		<InputGroup.Checkbox className="brandSelection" />
-				    		<span class="brandName"> Abercrombie</span>
+				    		<span className="brandName"> Abercrombie</span>
 				    	</Row>
 				    	<Row className="brandRow">
 				    		<InputGroup.Checkbox className="brandSelection" />
-				    		<span class="brandName"> Abercrombie</span>
+				    		<span className="brandName"> Abercrombie</span>
 				    	</Row>
 				    </div>
 				  </Card.Body>
@@ -88,7 +88,7 @@ class SearchFilter extends Component {
 				    </Button>
 
 				    <Button variant="link" id="clearButton">
-				    	<i class="times"></i>Clear All
+				    	<i className="times"></i>Clear All
 				    </Button>
 
 				  </Card.Body>

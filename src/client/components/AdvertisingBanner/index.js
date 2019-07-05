@@ -6,7 +6,7 @@ class AdvertisingBanner extends Component {
 		return (
 			<Row className="advertisingBanner">
 				<Col lg={{span: 4, offset: 1}}>
-					<div class="adsTitle">
+					<div className="adsTitle">
 						Converse
 					</div>
 					<p>
