@@ -1,0 +1,1 @@
+export const ADD_SUBSCRIBER = 'ADD_SUBSCRIBER'

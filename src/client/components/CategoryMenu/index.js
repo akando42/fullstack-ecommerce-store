@@ -33,7 +33,7 @@ class CategoryMenu extends Component {
 						<div className="categoryItem">Third Colum</div>
 					</Col>
 				</Row>
-			Name</Row>
+			</Row>
 		)
 	}
 }
